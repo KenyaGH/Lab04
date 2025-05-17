@@ -1,0 +1,10 @@
+admin,Administrator,IT,admin@company.com
+david.wilson,Analyst,Finance,david.wilson@company.com
+emma.jones,Manager,Marketing,emma.jones@company.com
+jack.smith,Developer,Engineering,jack.smith@company.com
+jennifer.lee,Designer,Marketing,jennifer.lee@company.com
+lisa.white,Manager,Sales,lisa.white@company.com
+michael.taylor,Developer,Engineering,michael.taylor@company.com
+robert.clark,Analyst,Finance,robert.clark@company.com
+sarah.brown,Designer,Marketing,sarah.brown@company.com
+william.davis,Developer,Engineering,william.davis@company.com

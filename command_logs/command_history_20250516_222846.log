@@ -1,0 +1,37 @@
+[2025-05-16 22:28:46] [/workspaces/Lab04] source .devcontainer/shell.sh
+[2025-05-16 22:50:10] [/workspaces/Lab04] ls>files_list.txt
+[2025-05-16 22:52:01] [/workspaces/Lab04] cat numbers.txt > numbers_copy.txt
+[2025-05-16 22:55:02] [/workspaces/Lab04] echo 'This is a new line' >> numbers_copy.txt
+[2025-05-16 22:55:36] [/workspaces/Lab04] ls -la > directory_info.txt
+[2025-05-16 22:55:50] [/workspaces/Lab04] date > timestamp.txt
+[2025-05-16 23:05:44] [/workspaces/Lab04] UCR /workspaces/Lab04 > ls non_existent_dir 2> errors.log
+[2025-05-16 23:06:15] [/workspaces/Lab04] find ~ -name '*.txt' > found_files.txt 2> find_errors.log
+[2025-05-16 23:06:37] [/workspaces/Lab04] grep 'ERROR' server.log > all_output.log 2>&1
+[2025-05-16 23:07:28] [/workspaces/Lab04] cat nonexistentfile.txt 2> /dev/null
+[2025-05-16 23:07:39] [/workspaces/Lab04] some_command > command_output.txt 2> command_errors.txt
+[2025-05-16 23:09:10] [/workspaces/Lab04] cat server.log | wc -l
+[2025-05-16 23:09:19] [/workspaces/Lab04] ls | grep '.txt$'
+[2025-05-16 23:09:31] [/workspaces/Lab04] cat unsorted_data.txt | sort | uniq
+[2025-05-16 23:09:40] [/workspaces/Lab04] grep 'ERROR' server.log | wc -l
+[2025-05-16 23:09:52] [/workspaces/Lab04] cut -d':' -f1 users.txt | sort
+[2025-05-16 23:10:00] [/workspaces/Lab04] cut -d':' -f3 users.txt | sort | uniq -c
+[2025-05-16 23:10:11] [/workspaces/Lab04] ls -lhS | head -n 3
+[2025-05-16 23:10:39] [/workspaces/Lab04] grep '10:..:..\\|11:..:..' server.log
+[2025-05-16 23:16:55] [/workspaces/Lab04] cat << EOF > introduction.txt\nLine 1\nLine 2\nLine 3\nEOF
+
+grep -E << EOF server.log\nERROR\nWARNING\nEOF
+[2025-05-16 23:22:30] [/workspaces/Lab04] cat << EOF > introduction.txt\nLine 1\nLine 2\nLine 3\nEOF
+grep -E << EOF server.log\nERROR\nWARNING\nEOF
+cat << EOF > simple.html\n<html>\n<body>Hello</body>\n</html>\nEOF
+sed -e 's/old/new/g' -e 's/foo/bar/g' users.txt
+cat << EOF | echo\nSELECT * FROM users;\nDELETE FROM logs;\nEOF
+[2025-05-16 23:23:13] [/workspaces/Lab04] wc -c <<< 'Linux is an open-source operating system'
+[2025-05-16 23:23:41] [/workspaces/Lab04] grep 'apple' <<< 'banana,apple,grape'
+[2025-05-16 23:23:59] [/workspaces/Lab04] tr 'a-z' 'A-Z' <<< 'hello world'
+[2025-05-16 23:24:10] [/workspaces/Lab04] grep '192.168.1.1' <<< $(cat server.log)
+[2025-05-16 23:24:25] [/workspaces/Lab04] tr ',' '\n' <<< '3,1,4,1,5,9,2,6' | sort -n
+[2025-05-16 23:27:03] [/workspaces/Lab04] diff <(cat dir1_files.txt) <(cat dir2_files.txt)
+[2025-05-16 23:27:29] [/workspaces/Lab04] comm -12 <(sort dir1_files.txt) <(sort dir2_files.txt)
+[2025-05-16 23:32:01] [/workspaces/Lab04] paste <(sort numbers.txt) <(tr 'a-z' 'A-Z' < numbers.txt)
+[2025-05-16 23:33:43] [/workspaces/Lab04] diff <(cat unsorted_data.txt) <(sort unsorted_data.txt)
+[2025-05-16 23:34:01] [/workspaces/Lab04] sed 's/company.com/newcompany.com/g' < users.txt > users_backup.txt

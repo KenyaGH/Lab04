@@ -1,0 +1,6 @@
+[2025-05-17 04:26:57] [/workspaces/Lab04] source .devcontainer/shell.sh
+[2025-05-17 04:35:04] [/workspaces/Lab04] grep -E '\\[ERROR\\]|\\[WARNING\\]' server.log | sort
+[2025-05-17 04:35:18] [/workspaces/Lab04] grep -o '[^ ]*@[^ ]*' users.txt | sort | uniq > emails.txt
+[2025-05-17 04:35:41] [/workspaces/Lab04] grep -o '\\[INFO\\]\\|\\[ERROR\\]\\|\\[WARNING\\]' server.log | sort | uniq -c
+[2025-05-17 04:36:21] [/workspaces/Lab04] comm -3 <(sort dir1_files.txt) <(sort dir2_files.txt)
+[2025-05-17 04:36:58] [/workspaces/Lab04] grep 'logged in' server.log | awk '{print $1, $2, $3}'
